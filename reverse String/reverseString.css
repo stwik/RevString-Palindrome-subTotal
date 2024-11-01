@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: "Itim", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f5f7;
+}
+
+.main__box {
+    border-radius: 15px;
+    border: solid black 2px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #a8dadc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.heading {
+    text-align: center;
+    margin: 1rem 0;
+    color: #1d3557;
+}
+
+.input__box {
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    border: solid 2px black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box::placeholder {
+    opacity: .45;
+}
+
+.butt {
+    width: 100%;
+    max-width: 150px;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.butt:hover {
+    font-size: 1.2rem;
+}
+
+.output {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #457b9d;
+    margin-top: 15px;
+}
+
+
+@media (max-width: 576px) {
+    .output {
+        font-size: 1.2rem;
+    }
+    .butt {
+        width: 100%;
+        max-width: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .output {
+        font-size: 2rem;
+    }
+}
